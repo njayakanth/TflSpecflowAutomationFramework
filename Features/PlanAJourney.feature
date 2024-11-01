@@ -30,7 +30,7 @@ Scenario: Validate plan our journey
 	When I enter the text 'LeicesterWrong' in From text field
 	And I enter the text 'CoventInvalid' in To text field
 	And I click on Plan my journey button
-	Then I should see more than one location marching message
+	Then I should see more than one location matching message
 
 	Scenario: Validate the widgets behaviour when no locations are entered
 	When I click on Plan my journey button
