@@ -81,6 +81,12 @@ namespace TflSpecflowAutomationFramework.StepDefinitions
             journeyResultsPage.ShouldSeeAccessInformation();
         }
 
+        [Then(@"I should see more than one location matching message")]
+        public void ThenIShouldSeeMoreThanOneLocationMatchingMessage()
+       {
+           journeyResultsPage.ShouldSeeMoreThanOneLocation();
+       }
+
 
     }
 }
