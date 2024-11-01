@@ -19,6 +19,7 @@ namespace TflSpecflowAutomationFramework.Pages
         IWebElement upStairs => driver.FindElement(By.XPath("(//a[@class='up-stairs tooltip-container' and @aria-label='Up stairs'])"));
         IWebElement upLift => driver.FindElement(By.XPath("(//a[@class='up-lift tooltip-container' and @aria-label='Up lift'])"));
         IWebElement levelWalkway => driver.FindElement(By.XPath("(//a[@class='level-walkway tooltip-container' and @aria-label='Level walkway'])"));
+        IWebElement moreThanOneLocation => driver.FindElement(By.XPath("//div[@class='info-message disambiguation']"));
 
         public JourneyResultsPage(IWebDriver driver)
         {
@@ -88,6 +89,12 @@ namespace TflSpecflowAutomationFramework.Pages
             upStairs.Equals(upStairs);
             upLift.Equals(upLift);
             levelWalkway.Equals(levelWalkway);
+
+        }
+
+        public void ShouldSeeMoreThanOneLocation()
+        {
+            moreThanOneLocation.Equals(moreThanOneLocation);
 
         }
 
